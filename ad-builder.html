@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Builder Items</title>
+    <link rel="icon" type="image/x-icon" href="./img/ExpediaGroupIcon_300x300.png">
+    <link rel="stylesheet" href="./css/lib/uitoolkit-expedia-responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="box wrap">
+        <header>
+            
+            <div class="logo">
+                <a href="/" ><img src="./img/ExpediaGroup.svg" alt="home" ></a>
+                
+            </div>
+            <div class="header-tiles">
+                <h1 >Client Ad Builder Guide</h1>
+                <h3>Choose the products featured in your campaign below and click on 'Test URL' to generate a customised client asset brief.</h3>
+            </div>
+            
+        </header>
+        <div class="clear">&nbsp;</div>
+        <section>
+            <form name="form" id="itemsForm">
+                <div   div class="uitk-grid all-x-gutter-12 desktop-col-1-4 tablet-col-1-4 smalltablet-col-1-4 flex-tile flex-theme-light flex-collapse flex-same-height" data-vtest-area="same-height-tile">
+                <div class="uitk-col">                    
+                    <div class="flex-card bg-lgray">
+                        <div class="title-card">
+                            <h3 class="bold">Titulo 1</h3>
+                        </div>
+                        <div class="flex-content util-padding-horz12" >
+                            <div class="flex-area-primary" >
+                                <label class="check" for="checkbox-1-1">
+                                    <input type="checkbox" name="checkbox-1-1" value="chckbx1-1" name="mark" onclick="getchecked()" aria-label="Checkbox 1-1" />
+                                    <span class="inline-label">Checkbox 1-1</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uitk-col">
+                    
+                    <div class="flex-card bg-lgray">
+                        <div class="title-card">
+                            <h3 class="bold">Titulo 2</h3>
+                        </div>
+                        <div class="flex-content util-padding-horz12" >
+                            <div class="flex-area-primary" >
+                                <label class="check" for="checkbox-2-1">
+                                    <input type="checkbox" id="checkbox-2-1" name="" value="2-1" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-2-2">
+                                    <input type="checkbox" id="checkbox-2-2" name="" value="2-2" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uitk-col">
+                    
+                    <div class="flex-card bg-lgray">
+                        <div class="title-card">
+                            <h3 class="bold">Titulo 2</h3>
+                        </div>
+                        <div class="flex-content util-padding-horz12" >
+                            <div class="flex-area-primary" >
+                                <label class="check" for="checkbox-3-1">
+                                    <input type="checkbox" id="checkbox-3-1" name="" value="3-1" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-3-2">
+                                    <input type="checkbox" id="checkbox-3-2" name="" value="3-2" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-3-3">
+                                    <input type="checkbox" id="checkbox-3-3" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uitk-col">
+                    
+                    <div class="flex-card bg-lgray">
+                        <div class="title-card">
+                            <h3 class="bold">Titulo 4</h3>
+                        </div>
+                        <div class="flex-content util-padding-horz12" >
+                            <div class="flex-area-primary" >
+                                <label class="check" for="checkbox-4-1">
+                                    <input type="checkbox" id="checkbox-4-1" name="" value="3-1" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-4-2">
+                                    <input type="checkbox" id="checkbox-4-2" name="" value="3-2" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-4-3">
+                                    <input type="checkbox" id="checkbox-4-3" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                                <label class="check" for="checkbox-4-4">
+                                    <input type="checkbox" id="checkbox-4-4" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <span class="inline-label">Checkbox label A</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </section>
+        <div class="clear">&nbsp;</div>
+        <section style="text-align: center;">
+            <h2 class="bold">Gererate URL</h2>
+            <label class="text" for="textarea-1">
+                <span class="label">Textarea label <span class="visuallyhidden">Field placeholder</span></span>
+                <textarea id="txt-url" name="marktext" placeholder="Field placeholder"></textarea>
+            </label>
+
+            <button type="button" class="btn-secondary btn-sub-action"><span class="btn-label">Copy URL</span></button>
+            <button type="button" class="btn-secondary btn-action"><span class="btn-label">Test URL</span></button>
+            <button type="button" onclick="clearForm()" class="btn-secondary btn-utility" ><span class="btn-label">Clear</span></button>
+        </section>    
+    </div>
+</body>
+</html>

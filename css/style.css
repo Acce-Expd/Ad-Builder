@@ -1,0 +1,24 @@
+
+html {background: #ededed;}
+.wrap {max-width: 1400px; margin: 0 auto;position: relative;}
+header {display: flex; background: #000099; padding: .5em;}
+.logo {display: flex; width: 10em;}
+
+/* .logo a {height: 100%; margin: auto;} */
+.logo a img {height: 5em; margin: auto;}
+
+.header-tiles {width: 100%; border-left: 1px solid #FFF; padding: .5em;}
+
+.header-tiles h1 {float: none; margin-bottom: 0.2em; color: #ffffff;}
+.header-tiles h3 {float: none; margin: 0.2em; color: #ffffff;}
+
+.flex-area-primary {display: flex; flex-direction: column;}
+    
+
+.flex-card.bg-lgray {background: #e5e5e5} 
+.title-card {background: #fff; padding: .3em;}
+
+.title-card h3.bold {padding: .1em .2em;}
+
+#tabs-bullets {display: flex; width: 100%;}
+
