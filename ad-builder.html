@@ -23,10 +23,13 @@
                 <h1 >Client Ad Builder Guide</h1>
                 <h3>Choose the products featured in your campaign below and click on 'Test URL' to generate a customised client asset brief.</h3>
             </div>
-            
+            <script>
+                
+            </script>
         </header>
         <div class="clear">&nbsp;</div>
         <section>
+            
             <form name="form" id="itemsForm">
                 <div   div class="uitk-grid all-x-gutter-12 desktop-col-1-4 tablet-col-1-4 smalltablet-col-1-4 flex-tile flex-theme-light flex-collapse flex-same-height" data-vtest-area="same-height-tile">
                 <div class="uitk-col">                    
@@ -37,9 +40,14 @@
                         <div class="flex-content util-padding-horz12" >
                             <div class="flex-area-primary" >
                                 <label class="check" for="checkbox-1-1">
-                                    <input type="checkbox" name="checkbox-1-1" value="chckbx1-1" name="mark" onclick="getchecked()" aria-label="Checkbox 1-1" />
+                                    <input type="checkbox" name="checkbox-1-1" value="chckbx1-1" name="mark" onclick="getChecked()" aria-label="Checkbox 1-1" />
                                     <span class="inline-label">Checkbox 1-1</span>
                                 </label>
+                                <label class="check" for="checkbox-1-1">
+                                    <input type="checkbox" name="checkbox-1-2" value="lpsp" name="mark" onclick="getChecked()" aria-label="DMO" />
+                                    <span class="inline-label">DMO</span>
+                                </label>
+                                <input type="checkbox" name="mark" onclick="getChecked()" value="lpsp">DMO<br>  
                             </div>
                         </div>
                     </div>
@@ -53,11 +61,11 @@
                         <div class="flex-content util-padding-horz12" >
                             <div class="flex-area-primary" >
                                 <label class="check" for="checkbox-2-1">
-                                    <input type="checkbox" id="checkbox-2-1" name="" value="2-1" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-2-1" name="mark" onclick="getChecked()" value="2-1" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-2-2">
-                                    <input type="checkbox" id="checkbox-2-2" name="" value="2-2" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-2-2" name="mark" onclick="getChecked()" value="2-2" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                             </div>
@@ -73,15 +81,15 @@
                         <div class="flex-content util-padding-horz12" >
                             <div class="flex-area-primary" >
                                 <label class="check" for="checkbox-3-1">
-                                    <input type="checkbox" id="checkbox-3-1" name="" value="3-1" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-3-1" name="mark" onclick="getChecked()" value="3-1" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-3-2">
-                                    <input type="checkbox" id="checkbox-3-2" name="" value="3-2" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-3-2" name="mark" onclick="getChecked()" value="3-2" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-3-3">
-                                    <input type="checkbox" id="checkbox-3-3" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-3-3" name="mark" onclick="getChecked()" value="3-3" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                             </div>
@@ -97,19 +105,19 @@
                         <div class="flex-content util-padding-horz12" >
                             <div class="flex-area-primary" >
                                 <label class="check" for="checkbox-4-1">
-                                    <input type="checkbox" id="checkbox-4-1" name="" value="3-1" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-4-1" name="mark" onclick="getChecked()" value="3-1" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-4-2">
-                                    <input type="checkbox" id="checkbox-4-2" name="" value="3-2" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-4-2" name="mark" onclick="getChecked()" value="3-2" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-4-3">
-                                    <input type="checkbox" id="checkbox-4-3" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-4-3" name="mark" onclick="getChecked()" value="3-3" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                                 <label class="check" for="checkbox-4-4">
-                                    <input type="checkbox" id="checkbox-4-4" name="" value="3-3" aria-label="Checkbox Label A" />
+                                    <input type="checkbox" id="checkbox-4-4" name="mark" onclick="getChecked()" value="3-3" aria-label="Checkbox Label A" />
                                     <span class="inline-label">Checkbox label A</span>
                                 </label>
                             </div>
@@ -117,20 +125,36 @@
                     </div>
                 </div>
                 </div>
+                <div class="clear">&nbsp;</div>
+                <div style="text-align: center;">
+                    <h2 class="bold">Gererate URL</h2>
+                    <label class="text" for="textarea-1">
+                        
+                        <textarea name="marktext" id="txtInput" readonly="readonly"></textarea>
+                    </label>
+                    
+                </div>
             </form>
+            <div style="text-align: center;">
+                <div class="tooltip">
+                    <button onclick="copyFuntion()" onmouseout="outFunc()" type="button" class="btn-secondary btn-sub-action">
+                        <span class="tooltiptext" id="copyTooltip">Copy the generated URL</span>
+                        <span class="btn-label">Copy URL</span>
+                    </button>
+                </div>
+                <div class="tooltip">
+                    <button onclick="testurl()" type="button" class="btn-secondary btn-action"><span class="tooltiptext" id="testTooltip">Test the generated URL</span>
+                        <span class="btn-label">Test URL</span>
+                    </button>
+                </div>
+                <div class="tooltip">
+                    <button type="button" onclick="clearForm()" class="btn-secondary btn-utility"><span class="tooltiptext" id="clearTooltip">Clear your selections</span>
+                        <span class="btn-label">Clear</span>
+                    </button>
+                </div>                
+            </div>
         </section>
-        <div class="clear">&nbsp;</div>
-        <section style="text-align: center;">
-            <h2 class="bold">Gererate URL</h2>
-            <label class="text" for="textarea-1">
-                <span class="label">Textarea label <span class="visuallyhidden">Field placeholder</span></span>
-                <textarea id="txt-url" name="marktext" placeholder="Field placeholder"></textarea>
-            </label>
-
-            <button type="button" class="btn-secondary btn-sub-action"><span class="btn-label">Copy URL</span></button>
-            <button type="button" class="btn-secondary btn-action"><span class="btn-label">Test URL</span></button>
-            <button type="button" onclick="clearForm()" class="btn-secondary btn-utility" ><span class="btn-label">Clear</span></button>
-        </section>    
+            
     </div>
 </body>
 </html>
