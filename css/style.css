@@ -1,11 +1,11 @@
 
 html {background: #ededed;}
 .wrap {max-width: 1400px; margin: 0 auto;position: relative;}
-header {display: flex; background: #000099; padding: .5em;}
+header {display: flex; background: #000099; padding: .5em; width: 100%; max-width: 100vw;}
 .logo {display: flex; width: 10em;}
 
 /* .logo a {height: 100%; margin: auto;} */
-.logo a img {height: 5em; margin: auto;}
+.logo a img {/*height: 5em;*/ margin: auto; width: 100%;padding-top: 1em;}
 
 .header-tiles {width: 100%; border-left: 1px solid #FFF; padding: .5em;}
 
@@ -59,6 +59,14 @@ header {display: flex; background: #000099; padding: .5em;}
     opacity: 1;
 }
 
+/* Exclusive for index */
+
+/* Tabs */ 
 #tabs-bullets {display: flex; width: 100%;}
 
+#tabs-bullets ul {display: flex; list-style: none; flex-wrap: wrap; align-items: center;}
+#tabs-bullets ul li {color: #FFF; min-width: 15em; width: auto;  }
 
+#tabs-bullets ul li a {color: #FFF; padding: 2% 1%; }
+#tabs-bullets ul li a:hover {font-weight: bolder; text-decoration: none; }
+#tabs-bullets ul li a:focus {color: #00b1ff; list-style: none; } 
