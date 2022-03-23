@@ -70,3 +70,36 @@ header {display: flex; background: #000099; padding: .5em; width: 100%; max-widt
 #tabs-bullets ul li a {color: #FFF; padding: 2% 1%; }
 #tabs-bullets ul li a:hover {font-weight: bolder; text-decoration: none; }
 #tabs-bullets ul li a:focus {color: #00b1ff; list-style: none; } 
+
+
+
+/* Contents */
+
+.subheadline {
+    color: #555555;
+}
+.separator-left {
+    display: block; border-left: 1px solid black;
+}
+
+
+.gallery img{width: 100%;}
+
+/* list */
+
+ul.list {list-style: disc;}
+.featureList li:before {
+    position: absolute;
+    margin-left: -1.3em;
+    font-weight: bold;
+}
+.featureList li {list-style: none;}
+.featureList li.tick:before {
+    content: "\2713";
+    color: green;
+}  
+
+.featureList li.cross:before {
+    content: "\2717";
+    color: red;
+}
