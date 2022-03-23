@@ -46,7 +46,7 @@ function clearForm() {
 }
 
 $(function(){
-    
+    $('#1-1-ban').load ('./html/1-1-ban.html');
 
     
 
