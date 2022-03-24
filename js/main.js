@@ -48,11 +48,8 @@ function clearForm() {
 $(function(){
 
     // Load htmls
-    $('#1-1-ban').load ('./html/1-1-ban.html');
-
-    
-
-    
+    $('#1-1-ban').load ('./html/1-1-ban.html');    
+    $('#1-2-btt').load ('./html/1-2-btt.html');
 
 
 
