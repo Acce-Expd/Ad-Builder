@@ -50,8 +50,25 @@ $(function(){
     
     
     // Load htmls
-    $('#1-1-ban').load ('./html/1-1-ban.html');    
+    $('#1-1-ban').load ('./html/1-1-ban.html');
     $('#1-2-btt').load ('./html/1-2-btt.html');
+    $('#1-3-bpc').load ('./html/1-3-bpc.html');
+    $('#1-4-taapoff').load ('./html/1-4-taapoff.html');
+    $('#1-5-iosaf').load ('./html/1-5-iosaf.html');
+    $('#1-6-ccmf').load ('./html/1-6-ccmf.html');
+
+    $('#2-1-970x90').load ('./html/2-1-970x90.html');
+    $('#2-2-nmc').load ('./html/2-2-nmc.html');
+    $('#2-3-nts').load ('./html/2-3-nts.html');
+    $('#2-4-160x600').load ('./html/2-4-160x600.html');
+
+    $('#3-1-lpsp').load ('./html/3-1-lpsp.html');
+    $('#3-2-lphs').load ('./html/3-2-lphs.html');
+    $('#3-3-lpas').load ('./html/3-3-lpas.html');
+    $('#3-4-lpnone').load ('./html/3-4-lpnone.html');
+    $('#3-5-lpvrbo').load ('./html/3-5-lpvrbo.html');
+    $('#3-6-lpcoopsa').load ('./html/3-6-lpcoopsa.html');
+    $('#3-7-lptvlspt').load ('./html/3-7-lptvlspt.html');
 
 
     $('#tabs-bullets > .tab-links > li > a').click(function(e)  {
@@ -88,6 +105,19 @@ $(function(){
             $('#showD1-4').addClass('hide-select');
             $('#showD1-5').addClass('hide-select');
             $('#showD1-6').addClass('hide-select');
+
+            $('#showD2-1').addClass('hide-select');
+            $('#showD2-2').addClass('hide-select');
+            $('#showD2-3').addClass('hide-select');
+            $('#showD2-4').addClass('hide-select');            
+            
+            $('#showD3-1').addClass('hide-select');
+            $('#showD3-2').addClass('hide-select');
+            $('#showD3-3').addClass('hide-select');
+            $('#showD3-4').addClass('hide-select');
+            $('#showD3-5').addClass('hide-select');
+            $('#showD3-6').addClass('hide-select');
+            $('#showD3-7').addClass('hide-select');
         });
         var divact = products[0];
         $('#' + divact + '').addClass('active').siblings().removeClass('active');
