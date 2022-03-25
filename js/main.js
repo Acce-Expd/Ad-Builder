@@ -45,10 +45,8 @@ function clearForm() {
     document.getElementById("itemsForm").reset();
 }
 
-$(function(){
-
-    
-    
+// Load the JQuery funtion 
+$(function(){    
     // Load htmls
     $('#1-1-ban').load ('./html/1-1-ban.html');
     $('#1-2-btt').load ('./html/1-2-btt.html');
@@ -70,7 +68,7 @@ $(function(){
     $('#3-6-lpcoopsa').load ('./html/3-6-lpcoopsa.html');
     $('#3-7-lptvlspt').load ('./html/3-7-lptvlspt.html');
 
-
+    // tab functionality
     $('#tabs-bullets > .tab-links > li > a').click(function(e)  {
         var currentAttrValue = $(this).attr('href');
  
@@ -83,7 +81,7 @@ $(function(){
         e.preventDefault();
     }); 
     
-    
+    // Functionality to hide or show the tabs by URL parameters
     (function() {
         function getParameterByName(name, url) {
             if (!url) url = window.location.href;
@@ -122,5 +120,4 @@ $(function(){
         var divact = products[0];
         $('#' + divact + '').addClass('active').siblings().removeClass('active');
     })();
-
 });
