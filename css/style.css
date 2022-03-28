@@ -98,6 +98,10 @@ header {display: flex; background: #000099; padding: .5em; width: 100%; max-widt
     display: block; border-left: 1px solid black;
 }
 
+/* Forms */
+.panel-body {border: 0.1em solid #ddd; padding: 1em; border-radius: .5em;}
+.btn-success {color: #fff; background-color: #5cb85c; border-color: #4cae4c; padding: .5em;}
+
 /* list */
 
 ul.list {list-style: disc;}
