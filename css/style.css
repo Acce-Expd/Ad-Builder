@@ -90,13 +90,13 @@ li.active a, li.active a:hover {color: #00b1ff; list-style: none; }
 
 .subheadline {
     color: #555555;
+    width: 100%;
 }
+
+.subheadline img {width: 1em;}
 .separator-left {
     display: block; border-left: 1px solid black;
 }
-
-
-
 
 /* list */
 
@@ -154,7 +154,7 @@ ul.list {list-style: disc;}
   }
   
   /* Modal Content (image) */
-  .modal-content {
+  .modal-content  {
     margin: auto;
     display: block;
     width: 80%;
@@ -162,7 +162,7 @@ ul.list {list-style: disc;}
   }
   
   /* Caption of Modal Image */
-  #caption {
+  #caption, #capAd970x90 {
     margin: auto;
     display: block;
     width: 80%;
@@ -192,7 +192,7 @@ ul.list {list-style: disc;}
   }
   
   /* The Close Button */
-  .close {
+  .close,.closeAd970x90 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -202,8 +202,7 @@ ul.list {list-style: disc;}
     transition: 0.3s;
   }
   
-  .close:hover,
-  .close:focus {
+  .close:hover,.close:focus,.closeAd970x90:hover,.closeAd970x90:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
