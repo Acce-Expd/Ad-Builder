@@ -20,7 +20,7 @@ function getChecked() {
             newtxt += chkbx[i].value;
         }
     }
-    document.form.marktext.value = 'https://c.travel-assets.com//media/meso_cm/others/Ad-Builder/en/index.html?prd=' + newtxt;
+    document.form.marktext.value = 'https://c.travel-assets.com/media/meso_cm/others/Ad-Builder/en/index.html?prd=' + newtxt;
 }
 
 function copyFuntion() {
