@@ -1,139 +1,69 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <div class="uitk-grid">
     <h2 class="bold" style="width: 100%;">BANNERS (TPS TAGS)</h2>
     <div class="uitk-col all-col-1-1 mobile-col-1-1">
         <h2 class="bold">Please provide the following:</h2>
         <h3 class="subheadline">Ad Sizes</h3>
-        <!-- <div class="checkbox">
-            <div class="panel panel-default">
-                 <div class="uitk-grid">
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1 ">
-                        <label><input value="970x90" type="checkbox">970x90</label>
-                        <label><input value="728x90" type="checkbox">728x90</label>
-
-                    </div>
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                        <label><input value="468x60" type="checkbox">468x60</label>
-                        <label><input value="300x50" type="checkbox">300x50</label>
-                    </div>
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                        <label><input value="160x600" type="checkbox">160x600</label>
-                        <label><input value="300x250" type="checkbox">300x250</label>
-                    </div>
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                        <label><input value="740x50" type="checkbox">740x50</label>
-                        <label><input value="970x250" type="checkbox">970x250</label>
-                    </div>
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                        <label><input value="300x600" type="checkbox">300x600</label>
-                        <label><input value="320x50" type="checkbox">320x50</label>
-                    </div>
-                    <div class="uitk-col all-col-1-6 mobile-col-1-1"></div>
-                </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <form name="form" id="itemsForm">
-            <div class="uitk-grid panel-body">
+        
+        <form  id="chgBtt">        
+            <div class="uitk-grid panel-body checkbox">
+               
                 <div class="uitk-col all-col-1-6 mobile-col-1-1 ">
-                    <label><input value="970x90" type="checkbox">970x90</label>
-                    <label><input value="728x90" type="checkbox">728x90</label>
+                    <label><input value="970x90" type="checkbox"> 970x90</label>
+                    <label><input value="728x90" type="checkbox"> 728x90</label>
 
                 </div>
                 <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                    <label><input value="468x60" type="checkbox">468x60</label>
-                    <label><input value="300x50" type="checkbox">300x50</label>
+                    <label><input value="468x60" type="checkbox"> 468x60</label>
+                    <label><input value="300x50" type="checkbox"> 300x50</label>
                 </div>
                 <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                    <label><input value="160x600" type="checkbox">160x600</label>
-                    <label><input value="300x250" type="checkbox">300x250</label>
+                    <label><input value="160x600" type="checkbox"> 160x600</label>
+                    <label><input value="300x250" type="checkbox"> 300x250</label>
                 </div>
                 <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                    <label><input value="740x50" type="checkbox">740x50</label>
-                    <label><input value="970x250" type="checkbox">970x250</label>
+                    <label><input value="740x50" type="checkbox"> 740x50</label>
+                    <label><input value="970x250" type="checkbox"> 970x250</label>
                 </div>
                 <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                    <label><input value="300x600" type="checkbox">300x600</label>
-                    <label><input value="320x50" type="checkbox">320x50</label>
-                </div>
-                <div class="uitk-col all-col-1-6 mobile-col-1-1"></div>
+                    <label><input value="300x600" type="checkbox"> 300x600</label>
+                    <label><input value="320x50" type="checkbox"> 320x50</label>
+                </div> 
             </div>
-            <div class="clear">&nbsp;</div>
-                       
-                <label for="inComments">Aditional Comments (Max of 150 characters per comment)</label>
-                <textarea id="inComments" class="form-control" rows="3"></textarea>         
-                <button type="button" onclick="" class="btn-secondary btn-success"><span class="btn-label">Generate</span></button>
-           
-        </form> -->
-
-        <form>
-            <div>
-                <div class="clear"></div>
-                <div class="row">
-                    <div class="col-md-12" id="format">
-                        <div class="form-group" id="changes">
-                            <label></label>
-                            <div class="checkbox">
-                                <div class="panel panel-default">
-                                    <div class="uitk-grid panel-body">
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1 ">
-                                            <label><input value="970x90" type="checkbox">970x90</label>
-                                            <label><input value="728x90" type="checkbox">728x90</label>
-                        
-                                        </div>
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                                            <label><input value="468x60" type="checkbox">468x60</label>
-                                            <label><input value="300x50" type="checkbox">300x50</label>
-                                        </div>
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                                            <label><input value="160x600" type="checkbox">160x600</label>
-                                            <label><input value="300x250" type="checkbox">300x250</label>
-                                        </div>
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                                            <label><input value="740x50" type="checkbox">740x50</label>
-                                            <label><input value="970x250" type="checkbox">970x250</label>
-                                        </div>
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1">
-                                            <label><input value="300x600" type="checkbox">300x600</label>
-                                            <label><input value="320x50" type="checkbox">320x50</label>
-                                        </div>
-                                        <div class="uitk-col all-col-1-6 mobile-col-1-1"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="options">
-                            <label for="inComments">Aditional Comments (Max of 150 characters per comment)</label>
-                            <textarea id="inComments" class="form-control" rows="3"></textarea>
-                        </div>
-                        <!--options-->
-                        <div class="form-group">
-                            
-                        </div>
-                        <div class="panel-title">
-                            <button type="button" class="btn btn-success" id="generate"><strong>Generate</strong></button>
-                        </div>
+            <div class="uitk-grid">   
+                <div class="uitk-col all-col-1-1 mobile-col-1-1 ">                    
+                    <!--options-->
+                    <div id="options">
+                        <label for="cmmdBtt">Aditional Comments (Max of 150 characters per comment)</label>
+                        <textarea id="cmmdBtt" class="form-control" rows="3"></textarea>
+                    </div>            
+                    <div class="panel-title">
+                        <button type="button" class="btn btn-success" id="genBttUrl"><strong>Generate</strong></button>
                     </div>
-
-                    <div class="col-md-6">
-                        <!--<label for="inComments">Code</label>-->
-                        <div class="form-group">
-                            <!--<textarea id="panelcode" style="height: 122px;" class="form-control" rows="25" readonly="readonly"></textarea>-->
-                            <div id="panelcode" style="font-size: 18px; font-weight: bold;"></div>
-
-                        </div>
-                        <!--<button type="button" class="btn btn-success" id="back"><strong>Back</strong></button>-->
-                    </div>
-
-
                 </div>
-                <div class="clear"></div>
-
-
             </div>
-
         </form>
+        <div >                
+            <div class="form-group" id="rBtt">                    
+                <div id="optBtt" class="type-400 bld"></div>
+                <h4 class="subheadline">Comments</h4>
+                <div id="cmmdBttTxt"></div>
+            </div>
+            <div class="clea">&nbsp;</div>
+            <div class="uitk-grid" id="ctcBtt">
+                <div class="uitk-col all-col-2-3 mobile-col-1-1">
+                    URL:
+                    <input type="text" id="inptBtt" class="inptext" >
+                </div>
+                <div class="uitk-col all-col-1-3 mobile-col-1-1">
+                    <button onclick="copyUrlBtt()" class="btn-success mauto" >Click to copy URL</button>
+                    <button onclick="goToBtt()" type="button" class="btn-success mauto">Go to</button>   
+                </div>             
+            </div>            
+        </div>        
+        <div class="clear"></div>
+        <script src="./js/lib/url-gen-content.js"></script>
 
         <div class="clear">&nbsp;</div>
         <h3 class="bold">Third Party Served Tags</h3>
@@ -175,8 +105,6 @@
             <li>Consider reflecting inclusion and diversity through messaging and content. <a href="https://s3.amazonaws.com/ewe-assets/media/meso_cm/others/Prototype/EN/index.html?prd=idta" target="_blank">Link here</a> to best practices and examples</li>
             <li>Do include <b>Terms apply on banners when there is a *savings offer (Save up to xx%).</b> For offers such as “free first checked bag” or something similar, if it truly is offered on all purchases, and not on specific flights (or rooms), then it is not necessary.</li>
         </ul>
-
-
 
     </div>
 </div>

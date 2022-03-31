@@ -6,32 +6,58 @@
         <h2 class="bold">Please provide the following:</h2>
         <h3 class="subheadline">Ad products</h3>
 
-        <form name="form" id="itemsForm">
-            <div class="uitk-grid panel-body">
+        <form  id="chgTaapoff">        
+            <div class="uitk-grid panel-body checkbox">
                 <div class="uitk-col all-col-1-3 mobile-col-1-1 ">
-                    <label><input value="Vertical Video" type="checkbox"> Vertical Video</label>
-                    <label><input value="Photo gallery" type="checkbox"> Photo gallery</label>
-                    <label><input value="Video recommender" type="checkbox"> Video recommender</label>
+                    <label><input id="vv" type="checkbox" value=" Vertical Video"> Vertical Video</label>
+                    <label><input id="pg" type="checkbox" value=" Photo gallery"> Photo gallery</label>
+                    <label><input id="vr" type="checkbox" value=" Video recommender"> Video recommender</label>
 
                 </div>
                 
                 <div class="uitk-col all-col-1-3 mobile-col-1-1">
-                    <label><input value="Multi-click unit" type="checkbox"> Multi-click unit</label>
-                    <label><input value="Text unit" type="checkbox"> Text unit</label>
-                    <label><input value="160x600,728x90,468x60 - Expedia designed" type="checkbox"> 160x600,728x90,468x60 - Expedia designed</label>
+                    <label><input id="mc" type="checkbox" value=" Multi-click unit"> Multi-click unit</label>
+                    <label><input id="tu" type="checkbox" value=" Text unit"> Text unit</label>
+                    <label><input id="ed" type="checkbox" value=" 160x600,728x90,468x60 - Expedia designed"> 160x600,728x90,468x60 - Expedia designed</label>
+                </div>
+
+                <div class="uitk-col all-col-1-3 mobile-col-1-1">                    
+                    <label><input id="cd" type="checkbox" value=" 160x600,728x90,468x60 – Client designed"> 160x600,728x90,468x60 – Client designed</label>
+                </div> 
+            </div>
+            <div class="uitk-grid">                
+                <div class="uitk-col all-col-1-1 mobile-col-1-1 ">                    
+                    <!--options-->
+                    <div id="options">
+                        <label for="cmmdTaapoff">Aditional Comments (Max of 150 characters per comment)</label>
+                        <textarea id="cmmdTaapoff" class="form-control" rows="3"></textarea>
+                    </div>            
+                    <div class="panel-title">
+                        <button type="button" class="btn btn-success" id="genTaapoffUrl"><strong>Generate</strong></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div >                
+            <div class="form-group" id="rTaapoff">                    
+                <div id="optTaapoff" class="type-400 bld"></div>
+                <h4 class="subheadline">Comments</h4>
+                <div id="cmmdTaapoffTxt"></div>
+            </div>
+            <div class="clea">&nbsp;</div>
+            <div class="uitk-grid" id="ctcTaapoff">
+                <div class="uitk-col all-col-2-3 mobile-col-1-1">
+                    URL:
+                    <input type="text" id="inptTaapoff" class="inptext" >
                 </div>
                 <div class="uitk-col all-col-1-3 mobile-col-1-1">
-                    <label><input value="160x600,728x90,468x60 – Client designed" type="checkbox"> 160x600,728x90,468x60 – Client designed</label>
-                </div>
-                
-            </div>
-            <div class="clear">&nbsp;</div>
-                       
-                <label for="inComments">Aditional Comments (Max of 150 characters per comment)</label>
-                <textarea id="inComments" class="form-control" rows="3"></textarea>         
-                <button type="button" onclick="" class="btn-secondary btn-success"><span class="btn-label">Generate</span></button>
-           
-        </form>
+                    <button onclick="copyUrlTaapoff()" class="btn-success mauto" >Click to copy URL</button>
+                    <button onclick="goToTaapoff()" type="button" class="btn-success mauto">Go to</button>   
+                </div>             
+            </div>            
+        </div>        
+        <div class="clear"></div>
+        <script src="./js/lib/url-gen-content.js"></script>       
 
     </div>
 </div>

@@ -2,7 +2,8 @@
 html {background: #ededed;}
 .wrap {max-width: 1400px; margin: 0 auto; position: relative;}
 header {display: flex; background: #000099; padding: .5em; width: 100%; max-width: 100vw; position: relative;}
-
+.inptext {height: 2em; width: 90%;}
+.mauto {margin: auto;}
 .logo-h {display: flex; width: 10em;}
 .logo-h a {display: flex;}
 .logo-h a img {margin: auto; width: 100%;}
@@ -92,7 +93,7 @@ header {display: flex; background: #000099; padding: .5em; width: 100%; max-widt
     color: #555555;
     width: 100%;
 }
-
+.bld {font-weight: bold;}
 .subheadline img {width: 1em;}
 .separator-left {
     display: block; border-left: 1px solid black;
@@ -100,7 +101,7 @@ header {display: flex; background: #000099; padding: .5em; width: 100%; max-widt
 
 /* Forms */
 .panel-body {border: 0.1em solid #ddd; padding: 1em; border-radius: .5em;}
-.btn-success {color: #fff; background-color: #5cb85c; border-color: #4cae4c; padding: .5em;}
+.btn-success {color: #fff; background-color: #5cb85c; border-color: #4cae4c; padding: .2em .5em;}
 textarea {width: 100%;}
 
 /* list */

@@ -1,31 +1,53 @@
 <div class="uitk-grid">
     <h2 class="bold" style="width: 100%;">TRAVEL SPOTLIGHT</h2>
-    <div class="uitk-col all-col-1-1 mobile-col-1-1">
-        
-        <h2 class="bold">Please provide the following:</h2>  
+    <div class="uitk-col all-col-1-1 mobile-col-1-1">        
+        <h2 class="bold">Please provide the following:</h2>
+    
+    <form  id="chgLptvlspt">        
+        <div class="uitk-grid panel-body checkbox">
+            <div class="uitk-col all-col-1-2 mobile-col-1-1 ">
+                <label><input id="ts-article" type="checkbox" value=" TRAVEL SPOTLIGHT – ARTICLE"> TRAVEL SPOTLIGHT – ARTICLE</label>
+                <label><input id="ts-concierge" type="checkbox" value=" TRAVEL SPOTLIGHT – CONCIERGE (TBD)"> TRAVEL SPOTLIGHT – CONCIERGE (TBD)</label>
+                <label><input id="ts-gallery" type="checkbox" value=" TRAVEL SPOTLIGHT – GALLERY"> TRAVEL SPOTLIGHT – GALLERY</label>
 
-        <form name="form" id="itemsForm">
-            <div class="uitk-grid panel-body">
-                <div class="uitk-col all-col-1-2 mobile-col-1-1 ">
-                    <label><input value="ts-article" type="checkbox"> TRAVEL SPOTLIGHT – ARTICLE</label>
-                    <label><input value="ts-concierge" type="checkbox"> TRAVEL SPOTLIGHT – CONCIERGE (TBD)</label>
-                    <label><input value="ts-gallery" type="checkbox"> TRAVEL SPOTLIGHT – GALLERY</label>
-                </div>                
-                
-                <div class="uitk-col all-col-1-2 mobile-col-1-1">                    
-                    <label><input value="ts-itinerary" type="checkbox"> TRAVEL SPOTLIGHT – ITINERARY</label>
-                    <label><input value="ts-listicle" type="checkbox"> TRAVEL SPOTLIGHT – LISTICLE</label>
-                    <label><input value="ts-quiz" type="checkbox"> TRAVEL SPOTLIGHT – QUIZ</label> 
-                </div>
-                
             </div>
-            <div class="clear">&nbsp;</div>
-                       
-                <label for="inComments">Aditional Comments (Max of 150 characters per comment)</label>
-                <textarea id="inComments" class="form-control" rows="3"></textarea>         
-                <button type="button" onclick="" class="btn-secondary btn-success"><span class="btn-label">Generate</span></button>
-           
-        </form>
-
-    </div>
+            <div class="uitk-col all-col-1-2 mobile-col-1-1">
+                <label><input id="ts-itinerary" type="checkbox" value=" TRAVEL SPOTLIGHT – ITINERARY"> TRAVEL SPOTLIGHT – ITINERARY</label>
+                <label><input id="ts-listicle" type="checkbox" value=" TRAVEL SPOTLIGHT – LISTICLE"> TRAVEL SPOTLIGHT – LISTICLE</label>
+                <label><input id="ts-quiz" type="checkbox" value=" TRAVEL SPOTLIGHT – QUIZ"> TRAVEL SPOTLIGHT – QUIZ</label>
+            </div>            
+        </div>
+        <div class="uitk-grid">                
+            <div class="uitk-col all-col-1-1 mobile-col-1-1 ">                    
+                <!--options-->
+                <div id="options">
+                    <label for="cmmdLptvlspt">Aditional Comments (Max of 150 characters per comment)</label>
+                    <textarea id="cmmdLptvlspt" class="form-control" rows="3"></textarea>
+                </div>            
+                <div class="panel-title">
+                    <button type="button" class="btn btn-success" id="genLptvlsptUrl"><strong>Generate</strong></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div >                
+        <div class="form-group" id="rLptvlspt">                    
+            <div id="optLptvlspt" class="type-400 bld"></div>
+            <h4 class="subheadline">Comments</h4>
+            <div id="cmmdLptvlsptTxt"></div>
+        </div>
+        <div class="clea">&nbsp;</div>
+        <div class="uitk-grid" id="ctcLptvlspt">
+            <div class="uitk-col all-col-2-3 mobile-col-1-1">
+                URL:
+                <input type="text" id="inptLptvlspt" class="inptext" >
+            </div>
+            <div class="uitk-col all-col-1-3 mobile-col-1-1">
+                <button onclick="copyUrlLptvlspt()" class="btn-success mauto" >Click to copy URL</button>
+                <button onclick="goToLptvlspt()" type="button" class="btn-success mauto">Go to</button>   
+            </div>             
+        </div>            
+    </div>        
+    <div class="clear"></div>
+    <script src="./js/lib/url-gen-content.js"></script> 
 </div>

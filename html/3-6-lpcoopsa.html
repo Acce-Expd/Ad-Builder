@@ -4,35 +4,59 @@
         
         <h2 class="bold">Please provide the following:</h2>       
 
-        <form name="form" id="itemsForm">
-            <div class="uitk-grid panel-body">
+        <form id="chgLpcoopsa">        
+            <div class="uitk-grid panel-body checkbox">
                 <div class="uitk-col all-col-1-4 mobile-col-1-1 ">
-                    <label><input value="hero" type="checkbox"> Hero Image</label>
-                    <label><input value="logo" type="checkbox"> Logo</label>
-                </div>
-                
+                    <label><input id="hero" type="checkbox" value=" Hero Image"> Hero Image</label>
+                    <label><input id="logo" type="checkbox" value=" Logo"> Logo</label>
+                </div>                
                 <div class="uitk-col all-col-1-4 mobile-col-1-1">
-                    <label><input value="sml" type="checkbox"> Social media links</label>
-                    <label><input value="intro" type="checkbox"> Introduction copy</label>
-                                       
+                    <label><input id="sml" type="checkbox" value=" Social media links"> Social media links</label>
+                    <label><input id="intro" type="checkbox" value=" Introduction copy"> Introduction copy</label>                    
                 </div>
                 <div class="uitk-col all-col-1-4 mobile-col-1-1">                    
-                    <label><input value="video" type="checkbox"> Video</label> 
-                    <label><input value="afd" type="checkbox"> Airline flight deals</label> 
-                </div>
+                    <label><input id="video" type="checkbox" value=" Video"> Video</label>
+                    <label><input id="afd" type="checkbox" value=" Airline flight deals"> Airline flight deals</label>
+                </div> 
                 <div class="uitk-col all-col-1-4 mobile-col-1-1">                    
-                    <label><input value="adeals" type="checkbox"> Activity deals</label> 
-                    <label><input value="tandc" type="checkbox"> Terms & conditions</label> 
+                    <label><input id="adeals" type="checkbox" value=" Activity deals"> Activity deals</label>
+                    <label><input id="tandc" type="checkbox" value=" Terms & conditions"> Terms & conditions</label>
                 </div>
-                
             </div>
-            <div class="clear">&nbsp;</div>
-                       
-                <label for="inComments">Aditional Comments (Max of 150 characters per comment)</label>
-                <textarea id="inComments" class="form-control" rows="3"></textarea>         
-                <button type="button" onclick="" class="btn-secondary btn-success"><span class="btn-label">Generate</span></button>
-           
+            <div class="uitk-grid">
+                
+                <div class="uitk-col all-col-1-1 mobile-col-1-1 ">                    
+                    <!--options-->
+                    <div id="options">
+                        <label for="cmmdLpcoopsa">Aditional Comments (Max of 150 characters per comment)</label>
+                        <textarea id="cmmdLpcoopsa" class="form-control" rows="3"></textarea>
+                    </div>            
+                    <div class="panel-title">
+                        <button type="button" class="btn btn-success" id="genLpcoopsaUrl"><strong>Generate</strong></button>
+                    </div>
+                </div>
+            </div>
+            
         </form>
-
+        <div >                
+            <div class="form-group" id="rLpcoopsa">                    
+                <div id="optLpcoopsa" class="type-400 bld"></div>
+                <h4 class="subheadline">Comments</h4>
+                <div id="cmmdLpcoopsaTxt"></div>
+            </div>
+            <div class="clea">&nbsp;</div>
+            <div class="uitk-grid" id="ctcLpcoopsa">
+                <div class="uitk-col all-col-2-3 mobile-col-1-1">
+                    URL:
+                    <input type="text" id="inptLpcoopsa" class="inptext" >
+                </div>
+                <div class="uitk-col all-col-1-3 mobile-col-1-1">
+                    <button onclick="copyUrlLpcoopsa()" class="btn-success mauto" >Click to copy URL</button>
+                    <button onclick="goToLpcoopsa()" type="button" class="btn-success mauto">Go to</button>   
+                </div>             
+            </div>            
+        </div>        
+        <div class="clear"></div>
+        <script src="./js/lib/url-gen-content.js"></script>
     </div>
 </div>
