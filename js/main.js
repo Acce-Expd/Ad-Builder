@@ -58,7 +58,7 @@ $(function(){
     $('#2-1-970x90').load ('./html/2-1-970x90.html');
     $('#2-2-nmc').load ('./html/2-2-nmc.html');
     $('#2-3-nts').load ('./html/2-3-nts.html');
-    $('#2-4-160x600').load ('./html/2-4-160x600.html');
+    $('#2-4-160x600').load ('./html/2-4-ad160x600.html');
 
     $('#3-1-lpsp').load ('./html/3-1-lpsp.html');
     $('#3-2-lphs').load ('./html/3-2-lphs.html');
