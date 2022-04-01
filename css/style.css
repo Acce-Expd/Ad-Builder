@@ -162,7 +162,7 @@ ul.type-300 {text-align: justify;}
 }
 
 /* Caption of Modal Image */
-#capBan, #capIosaf, #capCcmf, #capAd970x90,#capLpsp {
+#capBan, #capIosaf, #capCcmf, #capAd970x90, #capNmc, #capNts, #capAd160x600, #capLpsp {
   margin: auto;
   display: block;
   width: 80%;
@@ -175,7 +175,7 @@ ul.type-300 {text-align: justify;}
 }
 
 /* Add Animation */
-.modal-content, #capBan, #capIosaf, #Ccmf, #capAd970x90, #capLpsp {  
+.modal-content, #capBan, #capIosaf, #Ccmf, #capAd970x90, #capNmc, #capNts, #capAd160x600, #capLpsp {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -193,7 +193,7 @@ ul.type-300 {text-align: justify;}
 }
 
 /* The Close Button */
-.closeBan,.closeIosaf, .closeCcmf, .closeAd970x90, .closeLpsp {
+.closeBan,.closeIosaf, .closeCcmf, .closeAd970x90, .closeNmc, .closeNts, .closeAd160x600, .closeLpsp {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -203,7 +203,7 @@ ul.type-300 {text-align: justify;}
   transition: 0.3s;
 }
 
-.closeBan:hover,.closeBan:focus,.closeIosaf:hover,.closeIosaf:focus,.closeCcmf:hover,.closeCcmf:focus,.closeAd970x90:hover,.closeAd970x90:focus,.closeLpsp:hover,.closeLpsp:focus {
+.closeBan:hover,.closeBan:focus,.closeIosaf:hover,.closeIosaf:focus,.closeCcmf:hover,.closeCcmf:focus,.closeAd970x90:hover,.closeAd970x90:focus,.closeNmc:hover,.closeNmc:focus,.closeNts:hover,.closeNts:focus,.closeAd160x600:hover,.closeAd160x600:focus, .closeLpsp:hover,.closeLpsp:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
