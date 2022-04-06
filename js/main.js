@@ -48,12 +48,12 @@ function clearForm() {
 // Load the JQuery funtion 
 $(function(){    
     // Load htmls
-    $('#1-1-ban').load ('./html/1-1-ban.html');
-    $('#1-2-btt').load ('./html/1-2-btt.html');
-    $('#1-3-bpc').load ('./html/1-3-bpc.html');
-    $('#1-4-taapoff').load ('./html/1-4-taapoff.html');
-    $('#1-5-iosaf').load ('./html/1-5-iosaf.html');
-    $('#1-6-ccmf').load ('./html/1-6-ccmf.html');
+    // $('#1-1-ban').load ('./html/1-1-ban.html');
+    // $('#1-2-btt').load ('./html/1-2-btt.html');
+    // $('#1-3-bpc').load ('./html/1-3-bpc.html');
+    // $('#1-4-taapoff').load ('./html/1-4-taapoff.html');
+    // $('#1-5-iosaf').load ('./html/1-5-iosaf.html');
+    // $('#1-6-ccmf').load ('./html/1-6-ccmf.html');
 
     $('#2-1-970x90').load ('./html/2-1-970x90.html');
     $('#2-2-nmc').load ('./html/2-2-nmc.html');
@@ -97,12 +97,12 @@ $(function(){
         products.forEach((prd) => {
             var el = document.getElementsByClassName(prd)[0];
             el.style.display = 'block';        
-            $('#showD1-1').addClass('hide-select');
-            $('#showD1-2').addClass('hide-select');
-            $('#showD1-3').addClass('hide-select');
-            $('#showD1-4').addClass('hide-select');
-            $('#showD1-5').addClass('hide-select');
-            $('#showD1-6').addClass('hide-select');
+            // $('#showD1-1').addClass('hide-select');
+            // $('#showD1-2').addClass('hide-select');
+            // $('#showD1-3').addClass('hide-select');
+            // $('#showD1-4').addClass('hide-select');
+            // $('#showD1-5').addClass('hide-select');
+            // $('#showD1-6').addClass('hide-select');
 
             $('#showD2-1').addClass('hide-select');
             $('#showD2-2').addClass('hide-select');
