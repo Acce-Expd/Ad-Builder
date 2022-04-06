@@ -10,6 +10,9 @@ header {display: flex; background: #000099; padding: .5em; width: 100%; max-widt
 h2 {font-size: 1.2em;}
 h3 {font-size: 1.0667em;}
 
+.wrnng {color: #de350b;}
+
+
 .logo {position: absolute; display: initial; width: 10em;}
 
 .logo a {display: flex;}

@@ -60,13 +60,13 @@ $(function(){
     $('#2-3-nts').load ('./html/2-3-nts.html');
     $('#2-4-160x600').load ('./html/2-4-ad160x600.html');
 
-    $('#3-1-lpsp').load ('./html/3-1-lpsp.html');
-    $('#3-2-lphs').load ('./html/3-2-lphs.html');
-    $('#3-3-lpas').load ('./html/3-3-lpas.html');
-    $('#3-4-lpnone').load ('./html/3-4-lpnone.html');
-    $('#3-5-lpvrbo').load ('./html/3-5-lpvrbo.html');
-    $('#3-6-lpcoopsa').load ('./html/3-6-lpcoopsa.html');
-    $('#3-7-lptvlspt').load ('./html/3-7-lptvlspt.html');
+    $('#3-1-usp').load ('./html/3-1-usp.html');
+    // $('#3-2-lphs').load ('./html/3-2-lphs.html');
+    // $('#3-3-lpas').load ('./html/3-3-lpas.html');
+    // $('#3-4-lpnone').load ('./html/3-4-lpnone.html');
+    // $('#3-5-lpvrbo').load ('./html/3-5-lpvrbo.html');
+    // $('#3-6-lpcoopsa').load ('./html/3-6-lpcoopsa.html');
+    // $('#3-7-lptvlspt').load ('./html/3-7-lptvlspt.html');
 
     // tab functionality
     $('#tabs-bullets > .tab-links > li > a').click(function(e)  {
@@ -110,12 +110,12 @@ $(function(){
             $('#showD2-4').addClass('hide-select');            
             
             $('#showD3-1').addClass('hide-select');
-            $('#showD3-2').addClass('hide-select');
-            $('#showD3-3').addClass('hide-select');
-            $('#showD3-4').addClass('hide-select');
-            $('#showD3-5').addClass('hide-select');
-            $('#showD3-6').addClass('hide-select');
-            $('#showD3-7').addClass('hide-select');
+            // $('#showD3-2').addClass('hide-select');
+            // $('#showD3-3').addClass('hide-select');
+            // $('#showD3-4').addClass('hide-select');
+            // $('#showD3-5').addClass('hide-select');
+            // $('#showD3-6').addClass('hide-select');
+            // $('#showD3-7').addClass('hide-select');
         });
         var divact = products[0];
         $('#' + divact + '').addClass('active').siblings().removeClass('active');
